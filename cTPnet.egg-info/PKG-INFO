@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cTPnet
+Version: 0.2.4
+Summary: support python pacakge for single cell transcriptome to surface protein imputation
+Home-page: https://github.com/zhouzilu/cTPnetpy
+Author: Zilu Zhou
+Author-email: zhouzilu@pennmedicine.upenn.edu
+License: UNKNOWN
+Description: # ctpnetpy: The Python package of cTP-net
+        
+        This package is designed to be used by the R code of [cTP-net](https://github.com/zhouzilu/cTPnet).
+        
+        One can also use this Python package for predicting surface protein abundance from scRNA-seq data. Instructions on training will come out soon.
+        
+        ## Installation:
+        
+        ```
+        pip install ctpnetpy
+        ```
+        The package only supports Python (>=3.5)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
