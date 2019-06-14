@@ -2,11 +2,10 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch
 
-
+"""
+Structure of the MB-DNN for cTPnet.
+"""
 class Net(nn.Module):
-	"""
-    Structure of the MB-DNN for cTPnet.
-    """
     def __init__(self):
         super(Net, self).__init__()
         self.fc1 = nn.Linear(12611, 1000)
