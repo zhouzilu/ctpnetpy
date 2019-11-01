@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cTPnet
-Version: 0.2.4
+Version: 0.2.5
 Summary: support python pacakge for single cell transcriptome to surface protein imputation
 Home-page: https://github.com/zhouzilu/cTPnetpy
 Author: Zilu Zhou
@@ -15,7 +15,7 @@ Description: # ctpnetpy: The Python package of cTP-net
         ## Installation:
         
         ```
-        pip install ctpnetpy
+        pip install cTPnet
         ```
         The package only supports Python (>=3.5)
         
