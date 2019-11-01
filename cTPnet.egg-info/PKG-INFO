@@ -15,7 +15,7 @@ Description: # ctpnetpy: The Python package of cTP-net
         ## Installation:
         
         ```
-        pip install ctpnetpy
+        pip install cTPnet
         ```
         The package only supports Python (>=3.5)
         

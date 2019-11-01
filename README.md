@@ -7,6 +7,6 @@ One can also use this Python package for predicting surface protein abundance fr
 ## Installation:
 
 ```
-pip install ctpnetpy
+pip install cTPnet
 ```
 The package only supports Python (>=3.5)
