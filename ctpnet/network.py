@@ -7,7 +7,7 @@ Structure of the 12 MB-DNN for cTPnet.
 """
 class Net12(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(Net12, self).__init__()
         self.fc1 = nn.Linear(12611, 1000)
         self.fc3 = nn.Linear(1000, 128)
         self.fc40 = nn.Linear(128, 64)
@@ -56,7 +56,7 @@ Structure of the 24 MB-DNN for cTPnet.
 """
 class Net24(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(Net24, self).__init__()
         self.fc1 = nn.Linear(12363, 1000)
         self.fc3 = nn.Linear(1000, 128)
         self.fc40 = nn.Linear(128, 64)

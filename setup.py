@@ -1,7 +1,7 @@
 import setuptools
 setuptools.setup(
      name='cTPnet',  
-     version='0.2.5',
+     version='0.2.6',
      author="Zilu Zhou",
      author_email="zhouzilu@pennmedicine.upenn.edu",
      description="support python pacakge for single cell transcriptome to surface protein imputation",
