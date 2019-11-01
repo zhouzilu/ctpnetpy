@@ -6,10 +6,10 @@ import torch
 import sys
 from . import network
 
-def predict(X,model_file_path):
+def predict(X,model_file_path,d=24):
     """
-    Main function: imputation of 12 surface protein abundance from single cell
-    RNA-seq matrix.
+    Main function: imputation of 12 or 24 surface protein abundance from single
+    cell RNA-seq matrix.
 
     Parameters
     ----------
@@ -33,8 +33,15 @@ def predict(X,model_file_path):
     print('convert input')
     sys.stdout.flush()
     cells=X.columns
-    proteins=['CD45RA', 'CD19', 'CD14', 'CD8', 'CD16', 'CD3', 'CD11c', 'CD4','CD56','CD34','CD2','CD57']
-    net=network.Net()
+    if d==12:
+        proteins=['CD45RA', 'CD19', 'CD14', 'CD8', 'CD16', 'CD3', 'CD11c', 'CD4','CD56','CD34','CD2','CD57']
+        net=network.Net12()
+    elif d==24:
+        proteins=['CD3', 'CD4', 'CD45RA',  'CD16', 'CD14','CD11c', 'CD19','CD8','CD34', 'CD56','CD57','CD2','CD11a','CD123','CD127-IL7Ra','CD161','CD27','CD278-ICOS','CD28','CD38','CD45RO','CD69','CD79b','HLA.DR']
+        net=network.Net24()
+    else:
+        raise Exception('Protein output dimension has to be 12 or 24')
+    
     print('init network')
     sys.stdout.flush()
     net.load_state_dict(torch.load(model_file_path))
